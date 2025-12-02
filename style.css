@@ -30,22 +30,25 @@ body {
       padding: 24px;
       background: transparent;
       box-shadow: 0px 5px 20px 1px rgba(156, 148, 148, 0.2);
+      width: 92%;
+      max-width: 420px;
 
       
       
 }
 
 input{
-      width: 370px;
-      margin: 16px;
-      padding: 16px;
+      width: 100%;
+      margin: 8px 0 18px 0;
+      padding: 12px;
       border: none;
-      background: transparent;
+      /* background: transparent; */
+      background:rgba(255,255,255,0.03);
       box-shadow: 0px 3px 10px 1px rgba(156,148,148, 0.1);
       font-size: 32px;
-      font-family: 'Digital-7';
       text-align: right;
-      color: #080808;
+      font-family: 'Digital-7';
+      color: #fff;
       cursor: text;
       
 }
@@ -54,21 +57,47 @@ input::placeholder{
       color: #fff;
 }
 
+.row{
+      display: flex;
+      gap:8px;
+      margin: 6px 0;
+}
+
 
 button{
-      border: none;
-      width: 60px;
-      height: 60px;
-      margin: 8px;
-      padding: 2px;
+      flex: 1;
+      /* border: none; */
       border-radius: 10px;
+      /* width: 60px; */
+      height: 60px;
+      /* margin: 8px; */
+      /* padding: 2px; */
       background-color: #141212;
       color: #fff;
-      box-shadow: 0px -3px 10px 1px rgba(255, 0, 0, .7);
-      font-size: 32px;
+
+      /* box-shadow: 0px -3px 10px 1px rgba(255, 0, 0, .7); */
+
+       box-shadow: 0 4px 0 rgba(0,0,0,0.4);
+
+       transition: transform 0.08s ease;
+
+      /* font-size: 32px; */
+      font-size: 22px;
       cursor: pointer;
       
 }
+
+button:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 rgba(0,0,0,0.3);
+}
+
+button.operator-active {
+  background: orange;
+  color: black;
+}
+
+
 
 #equalBtn{
       background-color: orangered;
@@ -82,10 +111,17 @@ button{
 }
 
 #zero{
+      flex: 2;
       width: 142px;
       box-shadow: none;
       background-color:#141212 ;
       border: 1px solid rgb(78, 74, 74);
+}
+
+/* small screens */
+@media (max-width: 480px) {
+  input { font-size: 24px; padding: 10px; }
+  button { font-size: 18px; height: 50px; }
 }
 
 
