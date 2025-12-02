@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+* {
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+      height: 100vh;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: #076585;
+      /* fallback for old browsers */
+      background: linear-gradient(to right, #170101, #084b61);
+      
+
+}
+
+.container {
+      display: flex;
+      flex-direction: column;
+      border:1px solid #504b4b;
+      border-radius: 16px;
+      padding: 24px;
+      background: transparent;
+      box-shadow: 0px 5px 20px 1px rgba(156, 148, 148, 0.2);
+
+      
+      
+}
+
+input{
+      width: 370px;
+      margin: 16px;
+      padding: 16px;
+      border: none;
+      background: transparent;
+      box-shadow: 0px 3px 10px 1px rgba(156,148,148, 0.1);
+      font-size: 32px;
+      font-family: 'Digital-7';
+      text-align: right;
+      color: #080808;
+      cursor: text;
+      
+}
+
+input::placeholder{
+      color: #fff;
+}
+
+
+button{
+      border: none;
+      width: 60px;
+      height: 60px;
+      margin: 8px;
+      padding: 2px;
+      border-radius: 10px;
+      background-color: #141212;
+      color: #fff;
+      box-shadow: 0px -3px 10px 1px rgba(255, 0, 0, .7);
+      font-size: 32px;
+      cursor: pointer;
+      
+}
+
+#equalBtn{
+      background-color: orangered;
+      box-shadow: none;
+}
+
+#AC{
+      box-shadow: none;
+      color: blue;
+      background-color: black;
+}
+
+#zero{
+      width: 142px;
+      box-shadow: none;
+      background-color:#141212 ;
+      border: 1px solid rgb(78, 74, 74);
+}
+
+
+/*
+add border when btn is pressed
+can adjustable the backlight in three mode
+poer on blue and power off white.
+lift z axis look like a 3d curved dusplay
+can be show the number of operation at left side corner
+a logo and title at top sorner.
+ */
